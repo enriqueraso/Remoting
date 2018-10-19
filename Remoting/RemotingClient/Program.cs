@@ -1,4 +1,4 @@
-﻿using Remote.Application.Factories;
+﻿using Remote.Application.Services;
 using Remote.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Text;
 
 namespace RemotingClient
 {
-    class Program
+    public static class Program
     {
         static void Main(string[] args)
         {

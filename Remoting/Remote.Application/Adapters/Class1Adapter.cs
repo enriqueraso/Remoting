@@ -39,6 +39,11 @@ namespace Remote.Application.Adapters
             };
         }
 
+        public int Increment(int a)
+        {
+            return a + 1;
+        }
+
         #endregion IClass1Adapter Methods
     }
 }

@@ -6,19 +6,21 @@ using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
 using System.Text;
 
-namespace Remote.Application.Factories
+namespace Remote.Application.Services
 {
-    public class TcpChannelServerService
+    public sealed class TcpChannelServerService
     {
+        private readonly TcpServerChannel _channel = null;
+
         public TcpChannelServerService(int port, bool ensureSecurity)
         {
-            TcpServerChannel channel = new TcpServerChannel(port);
-            ChannelServices.RegisterChannel(channel, ensureSecurity);
+            _channel = new TcpServerChannel(port);
+            ChannelServices.RegisterChannel(_channel, ensureSecurity);
 
             RegisterAdapters();
         }
 
-        public void RegisterAdapters()
+        private static void RegisterAdapters()
         {
             RemotingConfiguration.RegisterWellKnownServiceType(typeof(Class1Adapter), "Class1Adapter", WellKnownObjectMode.Singleton);
         }

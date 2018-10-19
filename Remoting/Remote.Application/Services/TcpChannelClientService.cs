@@ -4,18 +4,23 @@ using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
 using System.Text;
 
-namespace Remote.Application.Factories
+namespace Remote.Application.Services
 {
-    public class TcpChannelClientService
+    public sealed class TcpChannelClientService
     {
-        private int _port;
+        private readonly TcpClientChannel _channel;
 
         public TcpChannelClientService(int port, bool ensureSecurity)
         {
-            TcpClientChannel channel = new TcpClientChannel();
-            ChannelServices.RegisterChannel(channel, ensureSecurity);
+            _channel = new TcpClientChannel();
+            ChannelServices.RegisterChannel(_channel, ensureSecurity);
 
-            _port = port;
+            this.Port = port;
+        }
+
+        public int Port
+        {
+            get; private set;
         }
 
         public I GetAdapter<I>(string adapterName = null)
@@ -27,8 +32,8 @@ namespace Remote.Application.Factories
 
             Type type = typeof(I);
             adapterName = adapterName ?? type.Name.Substring(1);
-
-            var adapter = Activator.GetObject(type, string.Format("tcp://localhost:{0}/{1}", _port, adapterName));
+            
+            var adapter = Activator.GetObject(type, string.Format("tcp://localhost:{0}/{1}", this.Port, adapterName));
             return (I)adapter;
         }
     }

@@ -9,5 +9,7 @@ namespace Remote.Domain.Interfaces
         Class2 Sum3(Class2 o, int a);
         
         Class2 CreateClass2();
+
+        int Increment(int a);
     }
 }

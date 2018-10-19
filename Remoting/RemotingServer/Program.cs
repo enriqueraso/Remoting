@@ -1,11 +1,11 @@
-﻿using Remote.Application.Factories;
+﻿using Remote.Application.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace RemotingServer
 {
-    class Program
+    public static class Program
     {
         static void Main(string[] args)
         {
