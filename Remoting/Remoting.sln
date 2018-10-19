@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemotingServer", "RemotingServer\RemotingServer.csproj", "{B7DDAAB2-7BE0-432E-8B2C-9CB385A1BC96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "001-Presentation", "001-Presentation", "{741553AF-1136-4062-BC07-7D0969840B7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "002-Application", "002-Application", "{501808B3-7100-4DFE-A982-199CDD89A999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemotingClient", "RemotingClient\RemotingClient.csproj", "{CB615AF4-6363-4094-B926-DA83A28BFCD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "003-Domain", "003-Domain", "{A24FE224-EF3D-4ED8-8125-2822482EA319}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remote.Domain", "Remote.Domain\Remote.Domain.csproj", "{1DB810BF-A611-4901-BF31-0B5896AA800D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remote.Application", "Remote.Application\Remote.Application.csproj", "{B45EEAF9-004B-4381-AB70-1AF6FDB06F64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7DDAAB2-7BE0-432E-8B2C-9CB385A1BC96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7DDAAB2-7BE0-432E-8B2C-9CB385A1BC96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7DDAAB2-7BE0-432E-8B2C-9CB385A1BC96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7DDAAB2-7BE0-432E-8B2C-9CB385A1BC96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB615AF4-6363-4094-B926-DA83A28BFCD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB615AF4-6363-4094-B926-DA83A28BFCD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB615AF4-6363-4094-B926-DA83A28BFCD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB615AF4-6363-4094-B926-DA83A28BFCD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DB810BF-A611-4901-BF31-0B5896AA800D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DB810BF-A611-4901-BF31-0B5896AA800D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DB810BF-A611-4901-BF31-0B5896AA800D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DB810BF-A611-4901-BF31-0B5896AA800D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B45EEAF9-004B-4381-AB70-1AF6FDB06F64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B45EEAF9-004B-4381-AB70-1AF6FDB06F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B45EEAF9-004B-4381-AB70-1AF6FDB06F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B45EEAF9-004B-4381-AB70-1AF6FDB06F64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B7DDAAB2-7BE0-432E-8B2C-9CB385A1BC96} = {741553AF-1136-4062-BC07-7D0969840B7F}
+		{CB615AF4-6363-4094-B926-DA83A28BFCD5} = {741553AF-1136-4062-BC07-7D0969840B7F}
+		{1DB810BF-A611-4901-BF31-0B5896AA800D} = {A24FE224-EF3D-4ED8-8125-2822482EA319}
+		{B45EEAF9-004B-4381-AB70-1AF6FDB06F64} = {501808B3-7100-4DFE-A982-199CDD89A999}
+	EndGlobalSection
+EndGlobal
